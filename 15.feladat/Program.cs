@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _15.feladat
 {
-    internal class Program
+    internal class Program  
     {
         static void Main(string[] args)
         {
@@ -16,8 +16,12 @@ namespace _15.feladat
             Console.Write("Add meg az második számot: ");
             int szam2 = int.Parse(Console.ReadLine());
 
-            double kozep = (double)(szam1 + szam2) / 2;
-            Console.WriteLine($"A számtani kőzép: {kozep}");
+            double szamtanikozep = (double)(szam1 + szam2) / 2;
+            Console.WriteLine($"A számtani kőzép: {szamtanikozep}");
+
+            double mertanikozep = Math.Sqrt(szam1 * szam2);
+            Console.WriteLine($"A mértani közép: {mertanikozep:F2}");
+
             Console.ReadKey();
         }
     }
